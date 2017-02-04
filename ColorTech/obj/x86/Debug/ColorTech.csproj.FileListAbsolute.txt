@@ -1,0 +1,7 @@
+c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\bin\Debug\ColorTech.exe
+c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\bin\Debug\ColorTech.pdb
+c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.Properties.Resources.resources
+c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.csproj.GenerateResource.Cache
+c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.exe
+c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.pdb
+c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.frm_batchSheet.resources
