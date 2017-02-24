@@ -6,3 +6,5 @@ c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x8
 c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.pdb
 c:\users\rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.frm_batchSheet.resources
 C:\Users\Rushab\documents\visual studio 2010\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.csprojResolveAssemblyReference.cache
+C:\Users\Rushab\Documents\Visual Studio 2013\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.exe
+C:\Users\Rushab\Documents\Visual Studio 2013\Projects\ColorTech\ColorTech\obj\x86\Debug\ColorTech.pdb
