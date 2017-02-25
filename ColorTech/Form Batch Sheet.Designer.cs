@@ -243,7 +243,7 @@
             this.txt_batchNo.Location = new System.Drawing.Point(164, 39);
             this.txt_batchNo.Name = "txt_batchNo";
             this.txt_batchNo.Size = new System.Drawing.Size(250, 20);
-            this.txt_batchNo.TabIndex = 7;
+            this.txt_batchNo.TabIndex = 2;
             // 
             // txt_customer
             // 
@@ -252,7 +252,7 @@
             this.txt_customer.Location = new System.Drawing.Point(164, 71);
             this.txt_customer.Name = "txt_customer";
             this.txt_customer.Size = new System.Drawing.Size(250, 20);
-            this.txt_customer.TabIndex = 8;
+            this.txt_customer.TabIndex = 3;
             // 
             // txt_batchSize
             // 
@@ -260,7 +260,7 @@
             this.txt_batchSize.Location = new System.Drawing.Point(629, 6);
             this.txt_batchSize.Name = "txt_batchSize";
             this.txt_batchSize.Size = new System.Drawing.Size(250, 20);
-            this.txt_batchSize.TabIndex = 9;
+            this.txt_batchSize.TabIndex = 4;
             // 
             // txt_batchStarted
             // 
@@ -268,7 +268,7 @@
             this.txt_batchStarted.Location = new System.Drawing.Point(629, 39);
             this.txt_batchStarted.Name = "txt_batchStarted";
             this.txt_batchStarted.Size = new System.Drawing.Size(250, 20);
-            this.txt_batchStarted.TabIndex = 10;
+            this.txt_batchStarted.TabIndex = 5;
             // 
             // txt_batchCompleted
             // 
@@ -276,7 +276,7 @@
             this.txt_batchCompleted.Location = new System.Drawing.Point(629, 71);
             this.txt_batchCompleted.Name = "txt_batchCompleted";
             this.txt_batchCompleted.Size = new System.Drawing.Size(250, 20);
-            this.txt_batchCompleted.TabIndex = 11;
+            this.txt_batchCompleted.TabIndex = 6;
             // 
             // grp_batchAllDetails
             // 
@@ -309,7 +309,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(438, 64);
-            this.textBox1.TabIndex = 5;
+            this.textBox1.TabIndex = 21;
             // 
             // lbl_note
             // 
@@ -345,7 +345,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(15, 24);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(956, 305);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.TabIndex = 20;
             // 
             // Column1
             // 
@@ -442,7 +442,7 @@
             this.txt_quantityPacked.Location = new System.Drawing.Point(120, 8);
             this.txt_quantityPacked.Name = "txt_quantityPacked";
             this.txt_quantityPacked.Size = new System.Drawing.Size(167, 20);
-            this.txt_quantityPacked.TabIndex = 1;
+            this.txt_quantityPacked.TabIndex = 18;
             // 
             // lbl_packedBy
             // 
@@ -461,7 +461,7 @@
             this.txt_packedBy.Location = new System.Drawing.Point(120, 41);
             this.txt_packedBy.Name = "txt_packedBy";
             this.txt_packedBy.Size = new System.Drawing.Size(167, 20);
-            this.txt_packedBy.TabIndex = 4;
+            this.txt_packedBy.TabIndex = 19;
             // 
             // grp_filteredBy
             // 
@@ -515,7 +515,7 @@
             this.txt_machineNo.Location = new System.Drawing.Point(124, 5);
             this.txt_machineNo.Name = "txt_machineNo";
             this.txt_machineNo.Size = new System.Drawing.Size(163, 20);
-            this.txt_machineNo.TabIndex = 1;
+            this.txt_machineNo.TabIndex = 14;
             // 
             // lbl_unitNo
             // 
@@ -545,7 +545,7 @@
             this.txt_unitNo.Location = new System.Drawing.Point(124, 36);
             this.txt_unitNo.Name = "txt_unitNo";
             this.txt_unitNo.Size = new System.Drawing.Size(163, 20);
-            this.txt_unitNo.TabIndex = 4;
+            this.txt_unitNo.TabIndex = 15;
             // 
             // txt_viscocity
             // 
@@ -553,7 +553,7 @@
             this.txt_viscocity.Location = new System.Drawing.Point(124, 69);
             this.txt_viscocity.Name = "txt_viscocity";
             this.txt_viscocity.Size = new System.Drawing.Size(163, 20);
-            this.txt_viscocity.TabIndex = 5;
+            this.txt_viscocity.TabIndex = 16;
             // 
             // lbl_solid
             // 
@@ -572,7 +572,7 @@
             this.txt_solid.Location = new System.Drawing.Point(124, 101);
             this.txt_solid.Name = "txt_solid";
             this.txt_solid.Size = new System.Drawing.Size(163, 20);
-            this.txt_solid.TabIndex = 7;
+            this.txt_solid.TabIndex = 17;
             // 
             // grp_qaStatus
             // 
@@ -626,7 +626,7 @@
             this.txts_sampleGiven.Location = new System.Drawing.Point(124, 6);
             this.txts_sampleGiven.Name = "txts_sampleGiven";
             this.txts_sampleGiven.Size = new System.Drawing.Size(163, 20);
-            this.txts_sampleGiven.TabIndex = 1;
+            this.txts_sampleGiven.TabIndex = 10;
             // 
             // lbl_Status
             // 
@@ -656,7 +656,7 @@
             this.txt_Status.Location = new System.Drawing.Point(124, 43);
             this.txt_Status.Name = "txt_Status";
             this.txt_Status.Size = new System.Drawing.Size(163, 20);
-            this.txt_Status.TabIndex = 4;
+            this.txt_Status.TabIndex = 11;
             // 
             // txt_density
             // 
@@ -664,7 +664,7 @@
             this.txt_density.Location = new System.Drawing.Point(124, 79);
             this.txt_density.Name = "txt_density";
             this.txt_density.Size = new System.Drawing.Size(163, 20);
-            this.txt_density.TabIndex = 5;
+            this.txt_density.TabIndex = 12;
             // 
             // lbl_testedBy
             // 
@@ -683,7 +683,7 @@
             this.txt_testedBy.Location = new System.Drawing.Point(124, 111);
             this.txt_testedBy.Name = "txt_testedBy";
             this.txt_testedBy.Size = new System.Drawing.Size(163, 20);
-            this.txt_testedBy.TabIndex = 7;
+            this.txt_testedBy.TabIndex = 13;
             // 
             // grp_material
             // 
@@ -725,7 +725,7 @@
             this.txt_weightedBy.Location = new System.Drawing.Point(124, 5);
             this.txt_weightedBy.Name = "txt_weightedBy";
             this.txt_weightedBy.Size = new System.Drawing.Size(163, 20);
-            this.txt_weightedBy.TabIndex = 1;
+            this.txt_weightedBy.TabIndex = 7;
             // 
             // lbl_checkedBy
             // 
@@ -755,7 +755,7 @@
             this.txt_checkedBy.Location = new System.Drawing.Point(124, 36);
             this.txt_checkedBy.Name = "txt_checkedBy";
             this.txt_checkedBy.Size = new System.Drawing.Size(163, 20);
-            this.txt_checkedBy.TabIndex = 4;
+            this.txt_checkedBy.TabIndex = 8;
             // 
             // txt_packingMaterial
             // 
@@ -763,7 +763,7 @@
             this.txt_packingMaterial.Location = new System.Drawing.Point(124, 69);
             this.txt_packingMaterial.Name = "txt_packingMaterial";
             this.txt_packingMaterial.Size = new System.Drawing.Size(163, 20);
-            this.txt_packingMaterial.TabIndex = 5;
+            this.txt_packingMaterial.TabIndex = 9;
             this.txt_packingMaterial.TextChanged += new System.EventHandler(this.txt_packingMaterial_TextChanged);
             // 
             // lbl_weightedBy
@@ -782,7 +782,7 @@
             this.btn_Submit.Location = new System.Drawing.Point(1022, 623);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(287, 23);
-            this.btn_Submit.TabIndex = 3;
+            this.btn_Submit.TabIndex = 22;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = true;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click_1);

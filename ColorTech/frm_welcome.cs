@@ -16,6 +16,8 @@ namespace ColorTech
             InitializeComponent();
 
             panel_options.Font = new Font("Arial", 12, FontStyle.Regular);
+
+            //this.ActiveControl = frm_welcome;
         }
 
         public void SetMyCustomFormat()

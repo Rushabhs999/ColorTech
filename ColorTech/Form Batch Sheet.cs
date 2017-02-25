@@ -19,6 +19,8 @@ namespace ColorTech
             InitializeComponent();
             grp_batchAllDetails.Font = new Font("Arial", 12, FontStyle.Regular);
 
+            this.ActiveControl = txt_product;
+
             titleText = dataGridView1.Columns[1].HeaderText;
            // MessageBox.Show(titleText);
 
