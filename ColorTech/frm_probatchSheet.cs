@@ -9,32 +9,28 @@ using System.Windows.Forms;
 
 namespace ColorTech
 {
-    public partial class frm_batchSheet : Form
+    public partial class frm_probatchSheet : Form
     {
         private DataGridView DataGridView1 = new DataGridView();
         public string titleText;
-
-        public int sum = 0;
        // public event DataGridViewEditingControlShowingEventHandler dataGridView1_EditingControlShowing;
-        public frm_batchSheet()
+        public frm_probatchSheet()
         {
             InitializeComponent();
-            grp_batchAllDetails.Font = new Font("Arial", 12, FontStyle.Regular);
-
-            this.ActiveControl = txt_product;
+            //grp_batchAllDetails.Font = new Font("Arial", 12, FontStyle.Regular);
 
             titleText = dataGridView1.Columns[1].HeaderText;
            // MessageBox.Show(titleText);
 
             
-            dataGridView1.ColumnCount = 6;
+            /*dataGridView1.ColumnCount = 6;
             dataGridView1.Columns[0].Name = "Sr No";
             dataGridView1.Columns[1].Name = "Item";
             dataGridView1.Columns[2].Name = "Quantity";
             dataGridView1.Columns[3].Name = "M.R.No.";
             dataGridView1.Columns[4].Name = "Input Time";
             dataGridView1.Columns[5].Name = "Charged By";
-
+            */
             dataGridView1.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(dataGridView1_EditingControlShowing);
 
 
@@ -49,6 +45,8 @@ namespace ColorTech
 
             //string[] row = new string[] { "1", "Product 1", "1000" ,"123","10","XYZ"};
             //dataGridView1.Rows.Add(row);
+
+            txt_product.Text = frm_welcome.product;
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -84,21 +82,17 @@ namespace ColorTech
                     ipTime = dataGridView1.Rows[i - 1].Cells["Column5"].Value.ToString(); 
                     charged = dataGridView1.Rows[i - 1].Cells["Column6"].Value.ToString();
 
+
                     MessageBox.Show(srNo + " " + item + " " + quantity + " " + mrno + " " + ipTime + " " + charged);
 
                     Console.WriteLine(srNo + "" + item + "" + quantity + "" + mrno + "" + ipTime + "" + charged);
-
-                    sum += Convert.ToInt32(dataGridView1.Rows[i - 1].Cells["Column3"].Value);
                 }
                 catch(Exception e)
                 {
                     MessageBox.Show("Table Values cannot be Empty");
                 }
-                MessageBox.Show("Sum is "+sum);
             }
-
-
-            //AutoComplete
+          
 
             
         }
@@ -176,9 +170,10 @@ namespace ColorTech
             UpdateValue();
         }
 
-        
+        private void tbl_batchDetails_Paint(object sender, PaintEventArgs e)
+        {
 
-        
-        
+        }
+ 
     }
 }
