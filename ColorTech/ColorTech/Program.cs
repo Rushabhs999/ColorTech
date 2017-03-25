@@ -16,8 +16,8 @@ namespace ColorTech
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frm_probatchSheet());
-            //Application.Run(new frm_welcome());
-            Application.Run(new frm_login());
+            Application.Run(new frm_welcome());
+            //Application.Run(new frm_login());
             //Application.Run(new frm_labbatchSheet());
         }
     }

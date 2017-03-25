@@ -34,6 +34,8 @@
             this.grp_batchAllDetails = new System.Windows.Forms.GroupBox();
             this.grp_detailsLeft = new System.Windows.Forms.GroupBox();
             this.grp_info = new System.Windows.Forms.GroupBox();
+            this.lbl_customer = new System.Windows.Forms.Label();
+            this.txt_customer = new System.Windows.Forms.TextBox();
             this.lbl_shade = new System.Windows.Forms.Label();
             this.txt_shade = new System.Windows.Forms.TextBox();
             this.txt_effect = new System.Windows.Forms.TextBox();
@@ -60,6 +62,9 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp_test = new System.Windows.Forms.GroupBox();
             this.dataGridView_test = new System.Windows.Forms.DataGridView();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Submit = new System.Windows.Forms.Button();
             this.grp_sampleStatus = new System.Windows.Forms.GroupBox();
             this.lbl_sampleGiven = new System.Windows.Forms.Label();
@@ -74,21 +79,17 @@
             this.lbl_note = new System.Windows.Forms.Label();
             this.grp_itemDetails = new System.Windows.Forms.GroupBox();
             this.dataGridView_item = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp_batchDetails = new System.Windows.Forms.GroupBox();
             this.lbl_batchSize = new System.Windows.Forms.Label();
             this.txt_batchSize = new System.Windows.Forms.TextBox();
             this.txt_batchNo = new System.Windows.Forms.TextBox();
             this.lbl_batchNo = new System.Windows.Forms.Label();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbl_customer = new System.Windows.Forms.Label();
-            this.txt_customer = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePicker2_lab = new System.Windows.Forms.DateTimePicker();
             this.menuStrip_labbatchSheet.SuspendLayout();
             this.grp_batchAllDetails.SuspendLayout();
             this.grp_detailsLeft.SuspendLayout();
@@ -138,6 +139,7 @@
             // 
             // grp_detailsLeft
             // 
+            this.grp_detailsLeft.Controls.Add(this.dateTimePicker2_lab);
             this.grp_detailsLeft.Controls.Add(this.grp_info);
             this.grp_detailsLeft.Controls.Add(this.dateTimePicker_lab);
             this.grp_detailsLeft.Controls.Add(this.grp_processedBy);
@@ -172,6 +174,26 @@
             this.grp_info.TabIndex = 14;
             this.grp_info.TabStop = false;
             this.grp_info.Text = "Product Info";
+            // 
+            // lbl_customer
+            // 
+            this.lbl_customer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_customer.AutoSize = true;
+            this.lbl_customer.Location = new System.Drawing.Point(6, 115);
+            this.lbl_customer.Name = "lbl_customer";
+            this.lbl_customer.Size = new System.Drawing.Size(51, 13);
+            this.lbl_customer.TabIndex = 27;
+            this.lbl_customer.Text = "Customer";
+            this.lbl_customer.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // txt_customer
+            // 
+            this.txt_customer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_customer.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_customer.Location = new System.Drawing.Point(71, 112);
+            this.txt_customer.Name = "txt_customer";
+            this.txt_customer.Size = new System.Drawing.Size(151, 20);
+            this.txt_customer.TabIndex = 28;
             // 
             // lbl_shade
             // 
@@ -426,6 +448,32 @@
             this.dataGridView_test.Size = new System.Drawing.Size(307, 355);
             this.dataGridView_test.TabIndex = 0;
             // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Test Name";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column9.Width = 130;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Pass / Fail";
+            this.Column10.Items.AddRange(new object[] {
+            "Pass",
+            "Fail"});
+            this.Column10.Name = "Column10";
+            this.Column10.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column10.Width = 50;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Percentage";
+            this.Column11.Name = "Column11";
+            this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column11.Width = 85;
+            // 
             // btn_Submit
             // 
             this.btn_Submit.Location = new System.Drawing.Point(1141, 586);
@@ -574,46 +622,6 @@
             this.dataGridView_item.Size = new System.Drawing.Size(538, 355);
             this.dataGridView_item.TabIndex = 2;
             // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.FillWeight = 30.45685F;
-            this.Column1.HeaderText = "Sr No";
-            this.Column1.Name = "Column1";
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.FillWeight = 113.9086F;
-            this.Column2.HeaderText = "Raw Material";
-            this.Column2.Name = "Column2";
-            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.FillWeight = 113.9086F;
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.Name = "Column3";
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.FillWeight = 113.9086F;
-            this.Column4.HeaderText = "Input Time";
-            this.Column4.Name = "Column4";
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column5.FillWeight = 113.9086F;
-            this.Column5.HeaderText = "Charged By";
-            this.Column5.Name = "Column5";
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // grp_batchDetails
             // 
             this.grp_batchDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -666,51 +674,54 @@
             this.lbl_batchNo.Text = "Batch No.";
             this.lbl_batchNo.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // Column9
+            // Column1
             // 
-            this.Column9.HeaderText = "Test Name";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column9.Width = 130;
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.FillWeight = 30.45685F;
+            this.Column1.HeaderText = "Sr No";
+            this.Column1.Name = "Column1";
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Column10
+            // Column2
             // 
-            this.Column10.HeaderText = "Pass / Fail";
-            this.Column10.Items.AddRange(new object[] {
-            "Pass",
-            "Fail"});
-            this.Column10.Name = "Column10";
-            this.Column10.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column10.Width = 50;
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.FillWeight = 113.9086F;
+            this.Column2.HeaderText = "Raw Material";
+            this.Column2.Name = "Column2";
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Column11
+            // Column3
             // 
-            this.Column11.HeaderText = "Percentage";
-            this.Column11.Name = "Column11";
-            this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column11.Width = 85;
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.FillWeight = 113.9086F;
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.Name = "Column3";
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // lbl_customer
+            // Column4
             // 
-            this.lbl_customer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_customer.AutoSize = true;
-            this.lbl_customer.Location = new System.Drawing.Point(6, 115);
-            this.lbl_customer.Name = "lbl_customer";
-            this.lbl_customer.Size = new System.Drawing.Size(51, 13);
-            this.lbl_customer.TabIndex = 27;
-            this.lbl_customer.Text = "Customer";
-            this.lbl_customer.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.FillWeight = 113.9086F;
+            this.Column4.HeaderText = "Input Time";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // txt_customer
+            // Column5
             // 
-            this.txt_customer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_customer.BackColor = System.Drawing.SystemColors.Window;
-            this.txt_customer.Location = new System.Drawing.Point(71, 112);
-            this.txt_customer.Name = "txt_customer";
-            this.txt_customer.Size = new System.Drawing.Size(151, 20);
-            this.txt_customer.TabIndex = 28;
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.FillWeight = 113.9086F;
+            this.Column5.HeaderText = "Charged By";
+            this.Column5.Name = "Column5";
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dateTimePicker2_lab
+            // 
+            this.dateTimePicker2_lab.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2_lab.Location = new System.Drawing.Point(1118, 55);
+            this.dateTimePicker2_lab.Name = "dateTimePicker2_lab";
+            this.dateTimePicker2_lab.Size = new System.Drawing.Size(188, 20);
+            this.dateTimePicker2_lab.TabIndex = 15;
             // 
             // frm_labbatchSheet
             // 
@@ -793,11 +804,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.GroupBox grp_info;
         private System.Windows.Forms.Label lbl_product;
         private System.Windows.Forms.TextBox txt_product;
@@ -810,5 +816,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.Label lbl_customer;
         private System.Windows.Forms.TextBox txt_customer;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2_lab;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

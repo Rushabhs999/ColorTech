@@ -13,8 +13,6 @@ namespace ColorTech
     {
         private DataGridView DataGridView1 = new DataGridView();
         public string titleText;
-
-        public int sum = 0;
        // public event DataGridViewEditingControlShowingEventHandler dataGridView1_EditingControlShowing;
         public frm_batchSheet()
         {
@@ -84,17 +82,15 @@ namespace ColorTech
                     ipTime = dataGridView1.Rows[i - 1].Cells["Column5"].Value.ToString(); 
                     charged = dataGridView1.Rows[i - 1].Cells["Column6"].Value.ToString();
 
+
                     MessageBox.Show(srNo + " " + item + " " + quantity + " " + mrno + " " + ipTime + " " + charged);
 
                     Console.WriteLine(srNo + "" + item + "" + quantity + "" + mrno + "" + ipTime + "" + charged);
-
-                    sum += Convert.ToInt32(dataGridView1.Rows[i - 1].Cells["Column3"].Value);
                 }
                 catch(Exception e)
                 {
                     MessageBox.Show("Table Values cannot be Empty");
                 }
-                MessageBox.Show("Sum is "+sum);
             }
 
 

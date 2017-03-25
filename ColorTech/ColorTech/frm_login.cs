@@ -19,15 +19,7 @@ namespace ColorTech
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            /*if(txt_username == null)
-            {
-                MessageBox.Show("Username cannot be Empty");
-            }
-            else if (txt_password == null)
-            {
-                MessageBox.Show("Password cannot be Empty");
-            }*/
-            if (string.IsNullOrWhiteSpace(txt_username.Text) || string.IsNullOrWhiteSpace(txt_password.Text))
+            if (txt_username.Text == null || txt_password.Text == null)
             {
                 MessageBox.Show("Invalid entry");
             }
