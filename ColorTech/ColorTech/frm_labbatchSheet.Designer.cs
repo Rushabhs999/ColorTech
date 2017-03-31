@@ -33,6 +33,7 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grp_batchAllDetails = new System.Windows.Forms.GroupBox();
             this.grp_detailsLeft = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker2_lab = new System.Windows.Forms.DateTimePicker();
             this.grp_info = new System.Windows.Forms.GroupBox();
             this.lbl_customer = new System.Windows.Forms.Label();
             this.txt_customer = new System.Windows.Forms.TextBox();
@@ -89,7 +90,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateTimePicker2_lab = new System.Windows.Forms.DateTimePicker();
             this.menuStrip_labbatchSheet.SuspendLayout();
             this.grp_batchAllDetails.SuspendLayout();
             this.grp_detailsLeft.SuspendLayout();
@@ -157,6 +157,14 @@
             this.grp_detailsLeft.Size = new System.Drawing.Size(1318, 658);
             this.grp_detailsLeft.TabIndex = 5;
             this.grp_detailsLeft.TabStop = false;
+            // 
+            // dateTimePicker2_lab
+            // 
+            this.dateTimePicker2_lab.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2_lab.Location = new System.Drawing.Point(1118, 55);
+            this.dateTimePicker2_lab.Name = "dateTimePicker2_lab";
+            this.dateTimePicker2_lab.Size = new System.Drawing.Size(188, 20);
+            this.dateTimePicker2_lab.TabIndex = 15;
             // 
             // grp_info
             // 
@@ -335,7 +343,7 @@
             // 
             this.lbl_employee.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_employee.AutoSize = true;
-            this.lbl_employee.Location = new System.Drawing.Point(10, 51);
+            this.lbl_employee.Location = new System.Drawing.Point(10, 54);
             this.lbl_employee.Name = "lbl_employee";
             this.lbl_employee.Size = new System.Drawing.Size(53, 13);
             this.lbl_employee.TabIndex = 9;
@@ -640,7 +648,7 @@
             // 
             this.lbl_batchSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_batchSize.AutoSize = true;
-            this.lbl_batchSize.Location = new System.Drawing.Point(6, 53);
+            this.lbl_batchSize.Location = new System.Drawing.Point(6, 54);
             this.lbl_batchSize.Name = "lbl_batchSize";
             this.lbl_batchSize.Size = new System.Drawing.Size(58, 13);
             this.lbl_batchSize.TabIndex = 13;
@@ -714,14 +722,6 @@
             this.Column5.HeaderText = "Charged By";
             this.Column5.Name = "Column5";
             this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dateTimePicker2_lab
-            // 
-            this.dateTimePicker2_lab.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2_lab.Location = new System.Drawing.Point(1118, 55);
-            this.dateTimePicker2_lab.Name = "dateTimePicker2_lab";
-            this.dateTimePicker2_lab.Size = new System.Drawing.Size(188, 20);
-            this.dateTimePicker2_lab.TabIndex = 15;
             // 
             // frm_labbatchSheet
             // 

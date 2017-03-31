@@ -21,7 +21,7 @@ namespace ColorTech
 
             titleText = dataGridView1.Columns[1].HeaderText;
            // MessageBox.Show(titleText);
-
+            dataGridView1.Rows[0].Cells["Column1"].Value = 1;
             
             /*dataGridView1.ColumnCount = 6;
             dataGridView1.Columns[0].Name = "Sr No";
@@ -57,6 +57,14 @@ namespace ColorTech
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             // Update the balance column whenever the value of any cell changes.
+            int sr = 1;
+            dataGridView1.Rows[0].Cells["Column1"].Value = sr;
+            
+            for(int i = 1; i < dataGridView1.RowCount; i++)
+            {
+                sr = sr + i;
+                dataGridView1.Rows[i + 1].Cells["Column1"].Value = sr;
+            }
             UpdateValue();
         }
 

@@ -127,6 +127,7 @@
             this.combo_proHeadMain.Name = "combo_proHeadMain";
             this.combo_proHeadMain.Size = new System.Drawing.Size(131, 21);
             this.combo_proHeadMain.TabIndex = 5;
+            this.combo_proHeadMain.SelectedIndexChanged += new System.EventHandler(this.combo_proHeadMain_SelectedIndexChanged);
             // 
             // lbl_proHeadMain
             // 
@@ -140,16 +141,6 @@
             // combo_proNameMain
             // 
             this.combo_proNameMain.FormattingEnabled = true;
-            this.combo_proNameMain.Items.AddRange(new object[] {
-            "Isotrap Clear Gloss",
-            "Isotrap Clear Matt",
-            "UV Pro Clear Gloss",
-            "Isotrap White Gloss",
-            "Isotrap White Matt",
-            "UV Pro White Gloss",
-            "Isotrap Black Gloss",
-            "Isotrap Black Matt",
-            "UV Pro Black Gloss"});
             this.combo_proNameMain.Location = new System.Drawing.Point(127, 67);
             this.combo_proNameMain.Name = "combo_proNameMain";
             this.combo_proNameMain.Size = new System.Drawing.Size(131, 21);
@@ -206,6 +197,7 @@
             this.combo_proHeadSub.Name = "combo_proHeadSub";
             this.combo_proHeadSub.Size = new System.Drawing.Size(131, 21);
             this.combo_proHeadSub.TabIndex = 7;
+            this.combo_proHeadSub.SelectedIndexChanged += new System.EventHandler(this.combo_proHeadSub_SelectedIndexChanged);
             // 
             // lbl_proHeadSub
             // 
@@ -219,16 +211,6 @@
             // combo_proNameSub
             // 
             this.combo_proNameSub.FormattingEnabled = true;
-            this.combo_proNameSub.Items.AddRange(new object[] {
-            "Isotrap Clear Gloss",
-            "Isotrap Clear Matt",
-            "UV Pro Clear Gloss",
-            "Isotrap White Gloss",
-            "Isotrap White Matt",
-            "UV Pro White Gloss",
-            "Isotrap Black Gloss",
-            "Isotrap Black Matt",
-            "UV Pro Black Gloss"});
             this.combo_proNameSub.Location = new System.Drawing.Point(127, 67);
             this.combo_proNameSub.Name = "combo_proNameSub";
             this.combo_proNameSub.Size = new System.Drawing.Size(131, 21);
@@ -490,6 +472,7 @@
             this.combo_proHeadMaster.Name = "combo_proHeadMaster";
             this.combo_proHeadMaster.Size = new System.Drawing.Size(131, 21);
             this.combo_proHeadMaster.TabIndex = 5;
+            this.combo_proHeadMaster.SelectedIndexChanged += new System.EventHandler(this.combo_proHeadMaster_SelectedIndexChanged);
             // 
             // lbl_proHeadMaster
             // 
@@ -503,16 +486,6 @@
             // combo_proNameMaster
             // 
             this.combo_proNameMaster.FormattingEnabled = true;
-            this.combo_proNameMaster.Items.AddRange(new object[] {
-            "Isotrap Clear Gloss",
-            "Isotrap Clear Matt",
-            "UV Pro Clear Gloss",
-            "Isotrap White Gloss",
-            "Isotrap White Matt",
-            "UV Pro White Gloss",
-            "Isotrap Black Gloss",
-            "Isotrap Black Matt",
-            "UV Pro Black Gloss"});
             this.combo_proNameMaster.Location = new System.Drawing.Point(127, 67);
             this.combo_proNameMaster.Name = "combo_proNameMaster";
             this.combo_proNameMaster.Size = new System.Drawing.Size(131, 21);
